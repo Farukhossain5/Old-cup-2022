@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* font utilities */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab:wght@500&family=Roboto:ital@1&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+}
+.containar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.cart{
+    height: 100vh;
+    display: flex;
+}
+.cart-text{
+    background-color: #1E1E1E;
+    height: 100%;
+    width: 50%;
+    /* background-color: red; */
+} 
+.cart-text > .cart-title {
+    margin: 3.6rem;
+}
+.cart-text > .cart-title > h1 {
+    font-size: 4rem;
+    color: whitesmoke;
+}
+.cart-text > .cart-title > p {
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+.cart-text > .cart-title > a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: #DD0000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.cart-image{
+    background-color: #1E1E1E;
+    height: 100%;
+    width: 50%;
+}
+.cart-image > img{
+    
+    height: 100%;
+    /* object-fit: cover; */
+    /* padding: 1.5rem; */
+}
+.article{
+    display: flex;
+    flex-direction: column;
+}
+article a {
+    text-decoration: none;
+
+}
+
+
+
+/* ----------------
+for mobile device
+------------------- */
+@media only screen and (max-width:688px) {
+    .cart-text{
+        width: 100%;
+        height: 25%;
+    }
+    .cart-image{
+        width: 100%;
+        height: 50%;
+    }
+    .cart-image > img {
+        width: 100%;
+    } 
+    .cart{
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .cart-text > .cart-title > h1 {
+        font-size: 1.4rem;
+    }
+    .elipsis-text {
+        font-size: 1rem;
+    }
+}
